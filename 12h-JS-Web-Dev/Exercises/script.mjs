@@ -91,7 +91,7 @@ let p = new Promise((resolve, reject) => {
     }
 })
 
-.then((message) => {
+p.then((message) => {
     console.log('The output of the promise was a ' + message)
 }).catch((message) => {
     console.log('The output of the promise was a ' + message)
@@ -109,7 +109,7 @@ let p2 = new Promise((resolve, reject) => {
     }
 })
 
-.then((input) => {
+p2.then((input) => {
     console.log(`This is where .then and result print: ${input}`)
 }) .catch((input) => {
     console.log(`This is where .catch and reject print: ${input}`)
