@@ -244,4 +244,4 @@ function oddishOrEvenish(num) {
     }
 }
 
-console.log(oddishOrEvenish(433))
+// console.log(oddishOrEvenish(433))
