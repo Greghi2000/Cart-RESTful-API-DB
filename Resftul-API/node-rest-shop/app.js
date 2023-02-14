@@ -9,7 +9,8 @@ const productRoutes = require('./api/routes/products')
 const orderRoutes = require('./api/routes/orders')
 const userRoutes = require('./api/routes/user')
 
-mongoose.connect('mongodb+srv://gregorio:'+ process.env.MONGO_ATLAS_PW +'@node-rest-shop.ja6ybds.mongodb.net/?retryWrites=true&w=majority')
+// mongoose.connect('mongodb+srv://gregorio:'+ process.env.MONGO_ATLAS_PW +'@node-rest-shop.ja6ybds.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://gregorio:Aristide1.@node-rest-shop.ja6ybds.mongodb.net/?retryWrites=true&w=majority')
 
 app.use(morgan('dev'))
 app.use('/uploads',express.static('uploads'))
