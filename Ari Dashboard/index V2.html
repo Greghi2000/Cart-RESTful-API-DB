@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>Devoteam Dashboard</title>
+	<link rel="stylesheet"
+		href="stylesV2.css">
+	<link rel="stylesheet"
+		href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > -->
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+			<img src=
+"images/logo-devo.svg"
+				class="icn-menuicn"
+				alt="Company Logo">
+    <!-- <img src=
+    "images/pp-icon.svg"
+            class="icn-pp"
+            alt="Profile"> -->
+    <a href="#settings" class="settings">Settings</a>
+    <a href="#reports" class="reports">Reports</a>
+    <a href="#assets" class="assets">Assets</a>
+    <a href="#tickets" class="tickets">Tickets</a>
+    <a href="#dashboard" class="dashboard">Dashboard</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <!-- <img src=
+    "images/pp-icon.svg"
+            class="icn-pp"
+            alt="Profile"> -->
+  </div>
+  <div class="breakdiv">
+    <input class="searchbar" type="text" placeholder="Search Site">
+</div>
+  <div class="container">
+    <div class="queue-div">
+      <div class="opening-div-1">
+        <p1 class="queue-p1">QUEUE</p1>
+        <p2 class="queue-p2">CALLS WAITING</p2>
+      </div>
+        <div class="div-fix">
+        <h2 class="queue-h2">26</h2>
+      </div>
+    </div>
+    <div class="inbound-calls-div">
+      <div class="heading-calls-div">
+        <p class="inbound-calls">INBOUND CALLS</p>
+        <p class="today-p">(TODAY)</p>
+      </div>
+      <div class="middle-calls-div">
+        <p class="waiting-time-secs">53.2 SECS</p>
+        <p class="waiting-p">WAITING TIME</p>
+      </div>
+      <div class="end-calls-div">
+        <p class="total-num">76</p>
+        <p class="total-p">TOTAL</p>
+      </div>
+    </div>
+    <div class="tickets-today-div">
+        <div class="heading-calls-div">
+          <p class="inbound-calls">TICKETS</p>
+          <p class="today-p">(TODAY)</p>
+        </div>
+        <div class="middle-tickets-div">
+          <p class="total-num">5</p>
+          <p class="created-p">CREATED BY ME</p>
+        </div>
+        <div class="end-tickets-div">
+          <p class="total-num">45</p>
+          <p class="total-p">TOTAL</p>
+        </div>
+    </div>
+    <div class="customer-satisfaction-div">
+      <div class="customer-satisfaction-heading">
+        <table class="y">
+          <tr>
+            <th class="x"></th>
+            <th class="x">Customer Satisfaction</th>
+            <!-- <th class="x"><img src="images/piechart.svg" alt="Piechart" class="piechart-img"></th> -->
+          </tr>
+          <tr>
+            <td><img src="images/very-sat.svg" alt=""></td>
+            <td>Very satisfied</td>
+          </tr>
+          <tr>
+            <td><img src="images/green.svg" alt=""></td>
+            <td>Satisfied</td>
+          </tr>
+          <tr>
+            <td><img src="images/neutral.svg" alt=""></td>
+            <td>Neutral</td>
+          </tr>
+          <tr>
+            <td><img src="images/unsat.svg" alt=""></td>
+            <td>Unsatisfied</td>
+          </tr>
+          <tr>
+            <td><img src="images/very-unsat.svg" alt=""></td>
+            <td>Very Unsatisfied</td>
+          </tr>
+        </table>
+    </div>
+    <div class="piechart-div">
+      <img src="images/piechart.svg" alt="">
+    </div>
+    </div>
+    <div class="long-div">
+      <table class="table-long-div">
+        <tr>
+          <th class="headings">#</th>
+          <th>Severity</th>
+          <th class="headings">Customer</th>
+          <th class="headings">Subject</th> 
+          <th class="headings">Last Update</th>
+        </tr>
+        <tr data-href="http://www.google.com">
+          <td>175</td>
+          <td class="table-severity">3</td> 
+          <td>Amy C</td>
+          <td class="td-issue">Cant open AWS</td>
+          <td>22/01/2023</td>
+        </tr>
+        <tr>
+          <td>234</td>
+          <td class="table-severity">5</td> 
+          <td>Maria</td>
+          <td>Germany</td>
+          <td>22/01/2023</td>
+        </tr>
+        <tr>
+          <td>287</td>
+          <td class="table-severity">3</td> 
+          <td>Anders</td>
+          <td>Germany</td>
+          <td>22/01/2023</td>
+        </tr>
+        <tr>
+          <td>192</td>
+          <td class="table-severity">1</td> 
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>22/01/2023</td>
+        </tr>
+        <tr>
+          <td>214</td>
+          <td class="table-severity">4</td> 
+          <td>Mexico</td>
+          <td>Mexico</td>
+          <td>22/01/2023</td>
+        </tr>
+      </table>
+    </div>
+    <div class="agents-avb-div">
+      <table class="table-agent">
+        <tr>
+          <th class="th1">Agents Avaliable</th>
+        </tr>
+        <tr>
+          <td>Tom B</td>
+          <td class="offline">Offline</td> 
+        </tr>
+        <tr>
+          <td>Ella P</td>
+          <td class="engaged">Engaged</td> 
+        </tr>
+        <tr>
+          <td>Jake D</td>
+          <td class="available">Available</td>  
+        </tr>
+        <tr>
+          <td>Jake D</td>
+          <td class="available">Available</td> 
+        </tr>
+        <tr>
+          <td>Gabby T</td>
+          <td class="available">Available</td> 
+        </tr>
+        <tr>
+          <td>Jason B</td>
+          <td class="available">Available</td> 
+        </tr>
+      </table>
+    </div>
+    <div class="service-issue-div">
+      <table class="service-issue-table">
+        <tr>
+          <th class="th1">Service Issue</th>
+        </tr>
+        <tr>
+          <td>Issue 1</td>
+        </tr>
+        <tr>
+          <td>Issue 2</td>
+        </tr>
+        <tr>
+          <td>Issue 3</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+        <div class="footer">
+                <img src=
+                "images/yt-icon.svg"
+                  class="footer-icn footer-yt-icon"
+                  alt="Youtube link">
+
+                <img src=
+                  "images/twitter-icon.svg"
+                  class="footer-icn footer-tw-icon"
+                    alt="Twitter link">
+
+                    <img src=
+                "images/linkedin-logo.svg"
+                class="footer-icn footer-lk-icon"
+                  alt="Linkedin link">
+                  
+              <img src=
+              "images/icon-messages.svg"
+                      class="icn-pp"
+                      alt="Chat icon">
+        </div>
+
+	<script src="./index.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
