@@ -18,15 +18,17 @@
 </head>
 
 <body>
+
   <div class="topnav" id="myTopnav">
-			<img src=
-"images/logo-devo.svg"
+        <img src=
+"images/Dev_logo_rgb.png"
 				class="icn-menuicn"
 				alt="Company Logo">
     <!-- <img src=
     "images/pp-icon.svg"
             class="icn-pp"
-            alt="Profile"> -->
+            alt="Profile">
+    <p> -->
     <a href="#settings" class="settings">Settings</a>
     <a href="#reports" class="reports">Reports</a>
     <a href="#assets" class="assets">Assets</a>
@@ -35,13 +37,14 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
+  </p>
     <!-- <img src=
     "images/pp-icon.svg"
             class="icn-pp"
             alt="Profile"> -->
   </div>
   <div class="breakdiv">
-    <input class="searchbar" type="text" placeholder="Search Site">
+    <input class="searchbar" type="text" placeholder="Search...">
 </div>
   <div class="container">
     <div class="queue-div">
@@ -59,7 +62,7 @@
         <p class="today-p">(TODAY)</p>
       </div>
       <div class="middle-calls-div">
-        <p class="waiting-time-secs">53.2 SECS</p>
+        <p class="waiting-time-secs">53.2 <sup class="secs">sec</sup></p> 
         <p class="waiting-p">WAITING TIME</p>
       </div>
       <div class="end-calls-div">
@@ -85,44 +88,44 @@
       <div class="customer-satisfaction-heading">
         <table class="y">
           <tr>
-            <th class="x"></th>
-            <th class="x">Customer Satisfaction</th>
+            <th class="x y"></th>
+            <th class="satisfaction-heading">CUSTOMER SATISFACTION</th>
             <!-- <th class="x"><img src="images/piechart.svg" alt="Piechart" class="piechart-img"></th> -->
           </tr>
           <tr>
-            <td><img src="images/very-sat.svg" alt=""></td>
-            <td>Very satisfied</td>
+            <td class="satisfaction-table"><img src="images/very-sat.svg" alt=""></td>
+            <td class="satisfaction-table">Very satisfied</td>
           </tr>
           <tr>
-            <td><img src="images/green.svg" alt=""></td>
-            <td>Satisfied</td>
+            <td class="satisfaction-table"><img src="images/green.svg" alt=""></td>
+            <td class="satisfaction-table">Satisfied</td>
           </tr>
           <tr>
-            <td><img src="images/neutral.svg" alt=""></td>
-            <td>Neutral</td>
+            <td class="satisfaction-table"><img src="images/neutral.svg" alt=""></td>
+            <td class="satisfaction-table">Neutral</td>
           </tr>
           <tr>
-            <td><img src="images/unsat.svg" alt=""></td>
-            <td>Unsatisfied</td>
+            <td class="satisfaction-table"><img src="images/unsat.svg" alt=""></td>
+            <td class="satisfaction-table">Unsatisfied</td>
           </tr>
           <tr>
-            <td><img src="images/very-unsat.svg" alt=""></td>
-            <td>Very Unsatisfied</td>
+            <td class="satisfaction-table"><img src="images/very-unsat.svg" alt=""></td>
+            <td class="satisfaction-table">Very Unsatisfied</td>
           </tr>
         </table>
     </div>
     <div class="piechart-div">
-      <img src="images/piechart.svg" alt="">
+      <img src="images/piechart.svg" alt="Piechart" class="piechart-img">
     </div>
     </div>
     <div class="long-div">
       <table class="table-long-div">
         <tr>
           <th class="headings">#</th>
-          <th>Severity</th>
-          <th class="headings">Customer</th>
-          <th class="headings">Subject</th> 
-          <th class="headings">Last Update</th>
+          <th>SEVERITY</th>
+          <th class="headings">CUSTOMER</th>
+          <th class="headings">SUBJECT</th> 
+          <th class="headings">LAST UPDATE</th>
         </tr>
         <tr data-href="http://www.google.com">
           <td>175</td>
@@ -162,12 +165,13 @@
       </table>
     </div>
     <div class="agents-avb-div">
+      <p class="agents-p">AGENTS AVAILABLE</p>
       <table class="table-agent">
         <tr>
-          <th class="th1">Agents Avaliable</th>
+          <!-- <th class="agents-available">AGENTS AVAILABLE</th> -->
         </tr>
         <tr>
-          <td>Tom B</td>
+          <td class="table-width-agents">Tom B</td>
           <td class="offline">Offline</td> 
         </tr>
         <tr>
@@ -186,16 +190,12 @@
           <td>Gabby T</td>
           <td class="available">Available</td> 
         </tr>
-        <tr>
-          <td>Jason B</td>
-          <td class="available">Available</td> 
-        </tr>
       </table>
     </div>
     <div class="service-issue-div">
       <table class="service-issue-table">
         <tr>
-          <th class="th1">Service Issue</th>
+          <th class="th1">SERVICE ISSUE</th>
         </tr>
         <tr>
           <td>Issue 1</td>
@@ -225,12 +225,11 @@
                 class="footer-icn footer-lk-icon"
                   alt="Linkedin link">
                   
-              <img src=
-              "images/icon-messages.svg"
-                      class="icn-pp"
-                      alt="Chat icon">
         </div>
-
+        <a href=""><img src=
+          "images/icon-messages.svg"
+                  class="icn-chat"
+                  alt="Chat icon"></a>
 	<script src="./index.js"></script>
   <script src="./script.js"></script>
 </body>

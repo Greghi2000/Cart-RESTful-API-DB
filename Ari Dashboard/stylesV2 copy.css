@@ -63,6 +63,12 @@ body{
 .topnav {
     background-color: #FFFFFF;
     overflow: hidden;
+    height: 6vh;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
   
   /* Style the links inside the navigation bar */
@@ -80,7 +86,7 @@ body{
   /* Change the color of links on hover */
 .topnav a:hover {
     color: #F9475F;
-    /* font-weight: 700; */
+    font-weight: 700;
     font-size: 14px;
     transition: 0.1s;
     border-bottom: #F9475F;
@@ -101,7 +107,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 55px;
+    margin-bottom: 85px;
 }
 
 .searchbar {
@@ -154,15 +160,6 @@ body{
     cursor: pointer;
 }
 
-.icn-chat {
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    z-index: 2;
-
-    width: 60px;
-
-}
   
   /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -194,14 +191,15 @@ body{
 
 }
 
+
 .container {
     display: grid;
     grid-gap: 16px;
     grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr ;
-    grid-template-rows: [row] 1fr [row] 0.8fr;
+    grid-template-rows: [row] 1fr [row] 1fr;
     background-color: #fff;
     color: #444;
-    margin: 0px 100px 65px 100px;
+    margin: 0px 100px 85px 100px;
 }
 
 .queue-div{
@@ -276,7 +274,7 @@ body{
     padding: 3% 4% 0% 4%;
     font-weight: 700;
     font-size: 74px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     text-align: right;
 }
 
@@ -338,7 +336,6 @@ body{
 .table-long-div{
     border-collapse: collapse;
     width: 100%;
-    margin-top: 10px;
 }
 
 
@@ -371,26 +368,21 @@ body{
     padding: 8px 4px 4px 8px;
 } */
 
-/* .service-issue-div {
+.service-issue-div {
     background-color: #FFFFFF;
     padding: 11.5px 30px 11.5px 30px;
     overflow: scroll;
     box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
     border-radius: 10px; 
-} */
+}
 
 .service-issue-table{
     border-collapse: collapse;
     width: 100%;
 }
 
-.secs {
-    font-size: 14px;
-
-}
 .th1 {
-    padding: 8px 4px 4px 0px;
-    text-align: left;
+    padding: 8px 4px 4px 8px;
 }
 
 .agents-available {
@@ -514,14 +506,14 @@ th {
     .container {
         display: grid;
         grid-gap: 16px;
-        grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
+        grid-template-columns: [col] 1fr [col] 1fr [col] 1fr ;
         grid-template-rows: [row] 1fr [row] 0.5fr [row] 1fr [row] 1fr;
         background-color: #fff;
         color: #444;
         margin: 0px 100px 85px 100px;
     }
     .queue-div{
-        grid-column: col 1 / span 4;
+        grid-column: col 1 / span 3;
         grid-row: row 2 ;
         flex-direction: row;
     }
@@ -534,29 +526,29 @@ th {
     }
 
     .inbound-calls-div{
-        grid-column: col 3 / span 2 ;
+        grid-column: col 2 / span 2 ;
         grid-row: row 5;
     }
     .tickets-today-div{
-        grid-column: col 1 / span 2;
+        grid-column: col 1 / span 1;
         grid-row: row 5;
     }
     .customer-satisfaction-div{
-        grid-column: col 1 / span 4 ;
+        grid-column: col 1 / span 3 ;
         grid-row: row 1;
         overflow: none;
     }
     
     .long-div{
-        grid-column: col 1 / span 4;
+        grid-column: col 1 / span 3;
         grid-row: row 4;
     }
     .agents-avb-div{
-        grid-column: col 1 / span 2;
+        grid-column: col 1 / span 1;
         grid-row: row 3;
     }
     .service-issue-div{
-        grid-column: col 3 / span 2;
+        grid-column: col 2 / span 2;
         grid-row: row 3;
     }
 }
@@ -608,10 +600,8 @@ th {
     padding-top: 18px;
 }
 
-.satisfaction-heading {
+.x {
     padding-bottom: 20px;
-    text-align: left;
-    padding-top: 10px;
 }
 
 .agents-p {
