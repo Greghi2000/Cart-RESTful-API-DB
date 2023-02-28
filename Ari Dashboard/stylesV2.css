@@ -63,18 +63,22 @@ body {
 .topnav {
   background-color: #ffffff;
   overflow: hidden;
+  margin-right: 100px;
+  /* height: 50px; */
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: right;
-  display: block;
+  /* display: block; */
   color: #000000;
-  text-align: center;
-  padding: 14px 35px 14px 35px;
+  /* text-align: center; */
+  padding: 17px 35px 14px 35px;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
+
+  /* border-bottom-color: white; */
+  border-bottom: 3px solid white;
 }
 
 /* Change the color of links on hover */
@@ -82,13 +86,21 @@ body {
   color: #f9475f;
   /* font-weight: 700; */
   font-size: 14px;
-  transition: 0.1s;
+  /* transition: 0.1s; */
+
   border-bottom: #f9475f;
-  border-bottom: solid;
+  border-bottom: 3px solid;
 }
 
 .test-div {
   background-color: greenyellow;
+}
+
+.menu-links {
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: right;
+  padding: 0px 100px 0px 100px;
 }
 
 .breakdiv {
@@ -108,6 +120,7 @@ body {
   border-radius: 5px;
   border: none;
   padding-left: 10px;
+  margin-right: 70px;
   width: 190px;
   height: 26px;
 }
@@ -125,11 +138,13 @@ body {
 }
 
 .icn-menuicn {
-  width: 150px;
-  /* height: 50px; */
+  /* width: 160px; */
+  height: 48px;
   float: left;
   margin-left: 100px;
+  margin-top: 2px;
 }
+
 .icn-menuicn:hover {
   cursor: pointer;
 }
@@ -140,6 +155,8 @@ body {
 
 .headings {
   text-align: left;
+  /* position: sticky;
+  top: 0; */
 }
 
 .customer-satisfaction-table {
@@ -179,6 +196,15 @@ body {
     grid-template-rows: [row] 1fr [row] 1fr; */
 }
 
+.selected {
+  font-weight: 700;
+  /* border-bottom: 3px solid #f9475f !important; */
+}
+
+.unselected {
+  font-weight: 500;
+}
+
 .customer-satisfaction-heading {
   padding: 11.5px 0px 21.5px 0px;
 }
@@ -199,7 +225,7 @@ body {
   display: grid;
   grid-gap: 16px;
   grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
-  grid-template-rows: [row] 1fr [row] 0.8fr;
+  grid-template-rows: [row] 1fr [row] 31vh;
   background-color: #fff;
   color: #444;
   margin: 0px 100px 65px 100px;
@@ -396,6 +422,10 @@ body {
   overflow: auto;
 }
 
+.pie-key-image {
+  width: 17px;
+}
+
 td {
   padding-top: 10px;
   font-size: 14px;
@@ -453,7 +483,7 @@ th {
   cursor: pointer;
 }
 
-.bar {
+/* .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -461,10 +491,10 @@ th {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: black;
-}
+} */
 
-@media screen and (max-width: 890px) {
-  .topnav a:not(:first-child) {
+@media screen and (max-width: 1000px) {
+  .topnav a {
     display: none;
   }
   .topnav a.icon {
@@ -480,7 +510,7 @@ th {
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1000px) {
   .topnav.responsive {
     position: relative;
   }
@@ -494,6 +524,7 @@ th {
     display: block;
     text-align: left;
     border: none;
+    margin-left: 65px;
   }
   .topnav.responsive .icn-menuicn {
     float: none;
@@ -534,7 +565,7 @@ th {
   }
 
   .piechart-img {
-    /* width: 15vw; */
+    width: 80%;
   }
 
   .inbound-calls-div {

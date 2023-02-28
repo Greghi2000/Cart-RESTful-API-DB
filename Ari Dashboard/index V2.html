@@ -25,24 +25,25 @@
         class="icn-menuicn"
         alt="Company Logo"
       />
-      <!-- <img src=
-    "images/pp-icon.svg"
-            class="icn-pp"
-            alt="Profile">
-    <p> -->
-      <a href="#settings" class="settings">Settings</a>
-      <a href="#reports" class="reports">Reports</a>
-      <a href="#assets" class="assets">Assets</a>
-      <a href="#tickets" class="tickets">Tickets</a>
-      <a href="#dashboard" class="dashboard">Dashboard</a>
+      <!-- <div class="menu-links">
+        <a href="#settings" class="unselected settings">Settings</a>
+        <a href="#reports" class="unselected reports">Reports</a>
+        <a href="#assets" class="unselected assets">Assets</a>
+        <a href="#tickets" class="unselected tickets">Tickets</a>
+        <a href="#dashboard" class="dashboard selected">Dashboard</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div> -->
+      <a href="#settings" class="unselected settings">Settings</a>
+      <a href="#reports" class="unselected reports">Reports</a>
+      <a href="#assets" class="unselected assets">Assets</a>
+      <a href="#tickets" class="unselected tickets">Tickets</a>
+      <a href="#dashboard" class="dashboard selected">Dashboard</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
       <!-- </p> -->
-      <!-- <img src=
-    "images/pp-icon.svg"
-            class="icn-pp"
-            alt="Profile"> -->
     </div>
     <div class="breakdiv">
       <input class="searchbar" type="text" placeholder="Search..." />
@@ -95,31 +96,31 @@
             </tr>
             <tr>
               <td class="satisfaction-table">
-                <img src="images/very-sat.svg" alt="" />
+                <img class="pie-key-image" src="images/very-sat.svg" alt="" />
               </td>
               <td class="satisfaction-table">Very satisfied</td>
             </tr>
             <tr>
               <td class="satisfaction-table">
-                <img src="images/green.svg" alt="" />
+                <img class="pie-key-image" src="images/green.svg" alt="" />
               </td>
               <td class="satisfaction-table">Satisfied</td>
             </tr>
             <tr>
               <td class="satisfaction-table">
-                <img src="images/neutral.svg" alt="" />
+                <img class="pie-key-image" src="images/neutral.svg" alt="" />
               </td>
               <td class="satisfaction-table">Neutral</td>
             </tr>
             <tr>
               <td class="satisfaction-table">
-                <img src="images/unsat.svg" alt="" />
+                <img class="pie-key-image" src="images/unsat.svg" alt="" />
               </td>
               <td class="satisfaction-table">Unsatisfied</td>
             </tr>
             <tr>
               <td class="satisfaction-table">
-                <img src="images/very-unsat.svg" alt="" />
+                <img class="pie-key-image" src="images/very-unsat.svg" alt="" />
               </td>
               <td class="satisfaction-table">Very Unsatisfied</td>
             </tr>
@@ -138,40 +139,54 @@
             <th class="headings">SUBJECT</th>
             <th class="headings">LAST UPDATE</th>
           </tr>
-          <tr data-href="http://www.google.com">
-            <td>175</td>
+          <tr>
+            <td>001</td>
             <td class="table-severity">3</td>
-            <td>Amy C</td>
-            <td class="td-issue">Cant open AWS</td>
-            <td>22/01/2023</td>
+            <td>John Smith</td>
+            <td class="td-issue">Power Outage</td>
+            <td>02/28/2023 10:30 AM</td>
           </tr>
           <tr>
-            <td>234</td>
-            <td class="table-severity">5</td>
-            <td>Maria</td>
-            <td>Germany</td>
-            <td>22/01/2023</td>
+            <td>002</td>
+            <td class="table-severity">2</td>
+            <td>Jane Doe</td>
+            <td class="td-issue">High Gas Bill</td>
+            <td>02/28/2023 11:15 AM</td>
           </tr>
           <tr>
-            <td>287</td>
-            <td class="table-severity">3</td>
-            <td>Anders</td>
-            <td>Germany</td>
-            <td>22/01/2023</td>
-          </tr>
-          <tr>
-            <td>192</td>
+            <td>003</td>
             <td class="table-severity">1</td>
-            <td>Germany</td>
-            <td>Germany</td>
-            <td>22/01/2023</td>
+            <td>Michael Johnson</td>
+            <td class="td-issue">Meter Reading Issue</td>
+            <td>02/28/2023 11:30 AM</td>
           </tr>
           <tr>
-            <td>214</td>
+            <td>004</td>
             <td class="table-severity">4</td>
-            <td>Mexico</td>
-            <td>Mexico</td>
-            <td>22/01/2023</td>
+            <td>Samantha Lee</td>
+            <td class="td-issue">Gas Leak</td>
+            <td>02/28/2023 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>005</td>
+            <td class="table-severity">2</td>
+            <td>William Jackson</td>
+            <td class="td-issue">Electricity Meter Change</td>
+            <td>02/28/2023 12:30 PM</td>
+          </tr>
+          <tr>
+            <td>006</td>
+            <td class="table-severity">5</td>
+            <td>Olivia Garcia</td>
+            <td class="td-issue">No Gas Supply</td>
+            <td>02/28/2023 01:00 PM</td>
+          </tr>
+          <tr>
+            <td>007</td>
+            <td class="table-severity">3</td>
+            <td>Ethan Brown</td>
+            <td class="td-issue">Electricity Bill Dispute</td>
+            <td>02/28/2023 01:30 PM</td>
           </tr>
         </table>
       </div>
