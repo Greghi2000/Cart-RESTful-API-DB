@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
 * {
-  /* margin: 0; */
-  /* padding: 0; */
-  /* box-sizing: border-box; */
   font-family: "Montserrat";
 }
 /* .container{
@@ -160,7 +157,7 @@ body {
 }
 
 .customer-satisfaction-table {
-  margin-left: -5px;
+  margin-left: -3px;
 }
 
 .icn-pp {
@@ -234,7 +231,6 @@ body {
 .queue-div {
   grid-column: col 1 / span 1;
   grid-row: row;
-  overflow: scroll;
   background-color: #f9475f;
   position: relative;
   display: flex;
@@ -247,17 +243,16 @@ body {
 .inbound-calls-div {
   grid-column: col 2 / span 1;
   grid-row: row;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .tickets-today-div {
   grid-column: col 3 / span 1;
   grid-row: row;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .customer-satisfaction-div {
   grid-column: col 4 / span 2;
   grid-row: row;
-  overflow: scroll;
 }
 
 .long-div {
@@ -550,7 +545,7 @@ th {
     display: grid;
     grid-gap: 16px;
     grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
-    grid-template-rows: [row] 1fr [row] 0.5fr [row] 1fr [row] 1fr;
+    grid-template-rows: [row] 0.8fr [row] 0.4fr [row] 0.6fr [row] 1fr [row] 0.8fr;
     background-color: #fff;
     color: #444;
     margin: 0px 100px 85px 100px;
@@ -562,6 +557,7 @@ th {
   }
   .queue-h2 {
     margin: 0px;
+    padding-top: 40%;
   }
 
   .piechart-img {
@@ -580,6 +576,10 @@ th {
     grid-column: col 1 / span 4;
     grid-row: row 1;
     overflow: none;
+  }
+
+  .piechart-div {
+    /* flex-grow: 1; */
   }
 
   .long-div {
