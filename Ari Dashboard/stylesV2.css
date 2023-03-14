@@ -250,15 +250,13 @@ body {
 
 .customer-severity-table-div {
   background-color: #ffffff;
-  overflow-x: auto;
-  overflow-y: hidden;
   overflow: scroll;
   padding: 11.5px 30px 11.5px 30px;
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
 }
 
-.table-long-div {
+.table-customer-severity-div {
   border-collapse: collapse;
   width: 100%;
   margin-top: 10px;
@@ -296,7 +294,7 @@ body {
 .secs {
   font-size: 14px;
 }
-.th1 {
+.th-service-issue {
   padding: 8px 4px 4px 0px;
   text-align: left;
 }
